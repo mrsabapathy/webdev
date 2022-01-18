@@ -1,0 +1,56 @@
+
+.cInput {
+    height: 25px;
+    background-color: #299cd3;
+    
+}
+
+
+.cOutput {
+    height: 75px;
+    background-color: rgb(217, 236, 243);
+}
+
+
+.cRow1 {
+    height: 75px;
+    color: white;
+    background-color: #299cd3;
+}
+
+
+.cRow2 {
+    height:150px;
+    color: white;
+    background-color: #299cd3;
+
+} 
+
+.cRow2Small {
+    height:75px;
+    color: white;
+    background-color: #299cd3;
+
+}
+
+.cRow3 {
+    height:150px;
+    color: white;
+    background-color: #299cd3;
+
+} 
+
+.cRow3Small {
+    height:75px;
+    color: white;
+    background-color: #299cd3;
+
+}
+
+.citem:hover {
+    background-color:lightblue;
+}
+
+#xoutput {
+    font-size:39px;
+}
