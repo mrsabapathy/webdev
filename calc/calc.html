@@ -14,12 +14,12 @@
                 //alert(out);
                 document.getElementById("xoutput").innerText = "";
                 var x = document.getElementById("userinput").innerText;
-                document.getElementById("userinput").innerText += '=';
+                //document.getElementById("userinput").innerText += '=';
                 //alert(x);
                 var xeval = eval(x);
 
                 if (typeof xeval == 'undefined') {
-                    document.getElementById("xoutput").innerText = 'Error';
+                    document.getElementById("xoutput").innerText = "Error";
                     return;
                 }
 
@@ -31,7 +31,7 @@
 
             function js_clear() {
                 document.getElementById("userinput").innerText = "";
-                document.getElementById("xoutput").innerText = "";
+                document.getElementById("xoutput").innerText = "0";
             }
         </script>
     </head>
@@ -41,7 +41,7 @@
             Calculator
         </div>
 
-        <div class="container border  mt-3">
+        <div class="container border mt-3">
 
             <div class="row cInput">
                 <div id="userinput" class="col border text-end"></div>
