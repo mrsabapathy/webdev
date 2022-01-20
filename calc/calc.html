@@ -19,11 +19,12 @@
                 var xeval = eval(x);
 
                 if (typeof xeval == 'undefined') {
+                    document.getElementById("xoutput").innerText = 'Error';
                     return;
                 }
 
 
-                //document.getElementById("output").innerText = out;
+                //document.getElementById("output").innerText = out; 
                 //alert(xeval);
                 document.getElementById("xoutput").innerText = xeval;
             }
@@ -36,8 +37,8 @@
     </head>
     <body>
 
-        <div class="container mt-5">
-            <h2>Calculator</h2>
+        <div class="h1 container mt-5">
+            Calculator
         </div>
 
         <div class="container border  mt-3">
@@ -45,75 +46,75 @@
             <div class="row cInput">
                 <div id="userinput" class="col border text-end"></div>
             </div>
-            <div class="row cOutput">
+            <div class="row border border-2 border-warning cOutput">
                 <div id="xoutput" class="col border text-end">0</div>
             </div>            
 
               
             <div class="row cRow1">
-              <div class="col border text-center citem" onclick="js_test('/')">/</div>
-              <div class="col border text-center citem" onclick="js_test('*')">x</div>
-              <div class="col border text-center citem" onclick="js_test('-')">-</div>
-              <div class="col-4 border text-center citem" onclick="js_clear()">CE</div>
+              <div class="col border-bottom border-end text-center citem" onclick="js_test('/')">/</div>
+              <div class="col border-bottom border-end text-center citem" onclick="js_test('*')">x</div>
+              <div class="col border-bottom border-end text-center citem" onclick="js_test('-')">-</div>
+              <div class="col-4 border-bottom border-end text-center citem" onclick="js_clear()">CE</div>
             </div>
 
             
             <div class="row cRow2">
-                <div class="col border">
-                    <div class="row border cRow2Small">
-                        <div id="id7" class="col border text-center citem" onclick="js_test('7')">7</div>
+                <div class="col ">
+                    <div class="row cRow2Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('7')">7</div>
                     </div>
-                    <div class="row border text-center cRow2Small">
-                        <div class="col border text-center citem" onclick="js_test('4')">4</div>
-                    </div>
-                </div>
-                <div class="col border">
-                    <div class="row border text-center">
-                        <div class="col border text-center cRow2Small citem" onclick="js_test('8')">8</div>
-                    </div>
-                    <div class="row border text-center cRow2Small">
-                        <div class="col border text-center citem" onclick="js_test('5')">5</div>
+                    <div class="row text-center cRow2Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('4')">4</div>
                     </div>
                 </div>
-                <div class="col border">
-                    <div class="row border text-center cRow2Small">
-                        <div class="col border text-center citem" onclick="js_test('9')">9</div>
+                <div class="col ">
+                    <div class="row text-center">
+                        <div class="col border-bottom border-end text-center cRow2Small citem" onclick="js_test('8')">8</div>
                     </div>
-                    <div class="row border text-center cRow2Small">
-                        <div class="col border text-center citem" onclick="js_test('6')">6</div>
+                    <div class="row text-center cRow2Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('5')">5</div>
                     </div>
                 </div>
-                <div class="col-4 border text-center citem" onclick="js_test('+')">+</div>
+                <div class="col ">
+                    <div class="row text-center cRow2Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('9')">9</div>
+                    </div>
+                    <div class="row text-center cRow2Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('6')">6</div>
+                    </div>
+                </div>
+                <div class="col-4 border-bottom border-end text-center citem" onclick="js_test('+')">+</div>
             </div>
 
             <div class="row cRow3">
-                <div class="col border">
-                    <div class="row border text-center cRow3Small">
-                        <div class="col border text-center citem" onclick="js_test('1')">1</div>
+                <div class="col ">
+                    <div class="row text-center cRow3Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('1')">1</div>
                     </div>
-                    <div class="row border text-center cRow3Small">
-                        <div class="col border text-center citem" onclick="js_test('00')">00</div>
-                    </div>
-                </div>
-                <div class="col border">
-                    <div class="row border text-center cRow3Small">
-                        <div class="col border text-center citem" onclick="js_test('2')">2</div>
-                    </div>
-                    <div class="row border text-center cRow3Small">
-                        <div class="col border text-center citem" onclick="js_test('0')">0</div>
+                    <div class="row text-center cRow3Small">
+                        <div class="col border-end text-center citem" onclick="js_test('00')">00</div>
                     </div>
                 </div>
-                <div class="col border">
-                    <div class="row border text-center cRow3Small">
-                        <div class="col border text-center citem" onclick="js_test('3')">3</div>
+                <div class="col ">
+                    <div class="row text-center cRow3Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('2')">2</div>
                     </div>
-                    <div class="row border text-center cRow3Small">
-                        <div class="col border text-center citem" onclick="js_test('.')">.</div>
+                    <div class="row text-center cRow3Small">
+                        <div class="col border-end text-center citem" onclick="js_test('0')">0</div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="row text-center cRow3Small">
+                        <div class="col border-bottom border-end text-center citem" onclick="js_test('3')">3</div>
+                    </div>
+                    <div class="row text-center cRow3Small">
+                        <div class="col border-end text-center citem" onclick="js_test('.')">.</div>
                     </div>
                 </div>
               
 
-                <div class="col-4 border text-center citem" onclick="calc_output()">=</div>
+                <div class="col-4 border-end text-center citem" onclick="calc_output()">=</div>
                 
             </div>   
 
