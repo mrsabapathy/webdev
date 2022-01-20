@@ -44,9 +44,13 @@
     height:75px;
     color: white;
     background-color: #299cd3;
+    
 
 }
 
+.citem {
+    font-size:29px;
+}
 .citem:hover {
     background-color:lightblue;
 }
